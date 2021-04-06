@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(100.5deg, #9492ec 17.7%, #f5c2c2 76.1%);
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+header h1 strong {
+  color: #313131;
+}
+
+header img {
+  width: 85px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  header img {
+    width: 70px;
+  }
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.side-footer {
+  text-align: center;
+  position: absolute;
+  color: #eee;
+  font-size: 0.85rem;
+  bottom: 5px;
+  left: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .side-footer {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+.content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrap {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.content-wrap .sidebar {
+  width: 20vw;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content-wrap .sidebar {
+    width: 100vw;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-wrap .sidebar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.content-wrap .sidebar aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 350px;
+          flex: 1 1 350px;
+  max-width: 350px;
+  padding-right: 16px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrap .sidebar aside {
+    margin-bottom: 0px;
+  }
+}
+
+.content-wrap .sidebar aside nav {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.content-wrap .sidebar aside nav h3 {
+  color: #fff;
+  text-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.content-wrap .sidebar aside nav a {
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 16px;
+  background-color: #eee;
+  border-radius: 999px;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.content-wrap .sidebar aside nav a:hover {
+  background-color: #313131;
+  color: #eee;
+  -webkit-box-shadow: 0px 0px 10px #fff;
+          box-shadow: 0px 0px 10px #fff;
+}
+
+.content-wrap .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrap .main-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.content-wrap .main-content main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  padding: 0px 16px;
+  width: 70vw;
+  height: 80vh;
+}
+
+@media screen and (max-width: 1280px) {
+  .content-wrap .main-content main {
+    width: 75vw;
+  }
+}
+
+.content-wrap .main-content main .main-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.content-wrap .main-content main .main-head .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
+@media screen and (max-width: 1024px) {
+  .content-wrap .main-content main .main-head .search-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.content-wrap .main-content main .main-head .search-box input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+  border-radius: 999px;
+  background-color: #eee;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.content-wrap .main-content main .main-head .search-box input ::-webkit-input-placeholder {
+  color: #888;
+}
+
+.content-wrap .main-content main .main-head .search-box input :-ms-input-placeholder {
+  color: #888;
+}
+
+.content-wrap .main-content main .main-head .search-box input ::-ms-input-placeholder {
+  color: #888;
+}
+
+.content-wrap .main-content main .main-head .search-box input ::placeholder {
+  color: #888;
+}
+
+.content-wrap .main-content main .main-head .search-box input:focus, .content-wrap .main-content main .main-head .search-box input:valid {
+  background-color: #313131;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 10px #fff;
+          box-shadow: 0px 0px 10px #fff;
+}
+
+.content-wrap .main-content main .anime-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.content-wrap .main-content main .anime-list .anime-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+  max-width: 20%;
+  padding: 10px 8px;
+}
+
+@media screen and (max-width: 1280px) {
+  .content-wrap .main-content main .anime-list .anime-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content-wrap .main-content main .anime-list .anime-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 33.33%;
+            flex: 1 1 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrap .main-content main .anime-list .anime-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-wrap .main-content main .anime-list .anime-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.content-wrap .main-content main .anime-list .anime-card a {
+  text-decoration: none;
+}
+
+.content-wrap .main-content main .anime-list .anime-card figure {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.content-wrap .main-content main .anime-list .anime-card figure .score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.content-wrap .main-content main .anime-list .anime-card figure .score .score-btn {
+  position: relative;
+  top: 35px;
+  background-image: linear-gradient(89.8deg, #de4a4a 4.7%, #1e1d1d 120.3%);
+  width: 35px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.content-wrap .main-content main .anime-list .anime-card figure .score .score-btn h5 {
+  font-size: 11px;
+  color: #eee;
+}
+
+.content-wrap .main-content main .anime-list .anime-card figure img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.content-wrap .main-content main .anime-list .anime-card h4 {
+  color: #313131;
+}
+
+.content-wrap .main-content main .anime-list .anime-card:hover figure img {
+  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.content-wrap .main-content .pagination {
+  text-align: center;
+}
+
+.content-wrap .main-content .pagination a {
+  text-decoration: none;
+  background-color: #fff;
+  color: #707070;
+  padding: 10px 13px 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 5px;
+  border-radius: 100%;
+  border: 1.5px solid #707070;
+  -webkit-box-shadow: 0px 0px 5px #707070;
+          box-shadow: 0px 0px 5px #707070;
+}
+
+.content-wrap .main-content .pagination a:hover, .content-wrap .main-content .pagination a:focus {
+  background-color: #313131;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 5px #fff;
+          box-shadow: 0px 0px 5px #fff;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
