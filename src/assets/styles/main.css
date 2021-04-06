@@ -418,7 +418,7 @@ header img:hover {
   text-align: center;
 }
 
-.content-wrap .main-content .pagination a {
+.content-wrap .main-content .pagination button {
   text-decoration: none;
   background-color: #fff;
   color: #707070;
@@ -432,11 +432,12 @@ header img:hover {
           box-shadow: 0px 0px 5px #707070;
 }
 
-.content-wrap .main-content .pagination a:hover, .content-wrap .main-content .pagination a:focus {
+.content-wrap .main-content .pagination button:hover, .content-wrap .main-content .pagination button:focus {
   background-color: #313131;
   border: 2px solid #fff;
   -webkit-box-shadow: 0px 0px 5px #fff;
           box-shadow: 0px 0px 5px #fff;
   color: #fff;
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */
